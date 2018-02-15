@@ -1,0 +1,29 @@
+{
+  "name": "@lorenzofox3/for-await-node",
+  "version": "0.1.0",
+  "description": "transform nodejs specific data structures into async iterator",
+  "main": "readable.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzofox3/for-await-node.git"
+  },
+  "keywords": [
+    "async-iterators",
+    "nodejs",
+    "stream",
+    "for-await",
+    "readdable"
+  ],
+  "author": "Laurent Renard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lorenzofox3/for-await-node/issues"
+  },
+  "homepage": "https://github.com/lorenzofox3/for-await-node#readme"
+}
