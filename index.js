@@ -1,4 +1,9 @@
-export default async function * (readable) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+const fromReadable = exports.fromReadable = async function* (readable) {
 	let exhausted = false;
 	const onData = () => new Promise(resolve => {
 		readable.once('readable', () => {

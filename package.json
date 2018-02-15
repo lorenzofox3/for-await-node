@@ -1,13 +1,14 @@
 {
   "name": "@lorenzofox3/for-await-node",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "transform nodejs specific data structures into async iterator",
-  "main": "readable.js",
+  "main": "index",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel *.mjs --out-dir .",
+    "test": "node --harmony --experimental-modules ./test/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/lorenzofox3/for-await-node/issues"
   },
-  "homepage": "https://github.com/lorenzofox3/for-await-node#readme"
+  "homepage": "https://github.com/lorenzofox3/for-await-node#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-syntax-async-generators": "^6.13.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  }
 }

@@ -1,4 +1,4 @@
-export default async function * (readable) {
+export const fromReadable = async function * (readable) {
 	let exhausted = false;
 	const onData = () => new Promise(resolve => {
 		readable.once('readable', () => {
