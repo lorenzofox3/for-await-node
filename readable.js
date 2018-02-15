@@ -7,7 +7,7 @@ module.exports = function factory(readable) {
 	});
 
 	return {
-		[asyncIterator]() {
+		[Symbol.asyncIterator]() {
 			return this;
 		},
 		async next() {

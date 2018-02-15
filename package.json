@@ -1,6 +1,6 @@
 {
   "name": "@lorenzofox3/for-await-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "transform nodejs specific data structures into async iterator",
   "main": "readable.js",
   "directories": {
