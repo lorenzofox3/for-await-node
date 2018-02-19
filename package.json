@@ -8,7 +8,10 @@
   },
   "scripts": {
     "build": "babel *.mjs --out-dir .",
-    "test": "node --harmony --experimental-modules ./test/index.mjs"
+    "test": "node --harmony --experimental-modules ./test/index.mjs | tap-diff",
+    "test:ci": "node --harmony --experimental-modules ./test/index.mjs | tap-set-exit",
+    "bench:iterator":"node --harmony --experimental-modules ./benchmark/iterator.mjs",
+    "bench:stream":"node --harmony --experimental-modules ./benchmark/stream.mjs"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,9 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-syntax-async-generators": "^6.13.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "tap-diff": "^0.1.1",
+    "tap-set-exit": "^1.1.1",
+    "zora": "^2.0.0"
   }
 }
